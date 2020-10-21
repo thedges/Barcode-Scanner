@@ -3,6 +3,10 @@ THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/
 
 A utility component to do barscans from Salesforce mobile app.
 
+# QR Code Formula Field
+
+IMAGE("https://api.qrserver.com/v1/create-qr-code/?data=salesforce1://sObject/" & Id & "/view", "QR Scan Code", 220, 220)
+
 # Installation Instructions
 
 <b>Here are steps to use this component:</b>
