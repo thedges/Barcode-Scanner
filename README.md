@@ -3,6 +3,8 @@ THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/
 
 A utility component to do barscans from Salesforce mobile app.
 
+![alt text](https://github.com/thedges/Barcode-Scanner/blob/main/BarcodeScannerVideo.gif "BarcodeScannerVideo")
+
 # QR Code Formula Field
 
 IMAGE("https://api.qrserver.com/v1/create-qr-code/?data=salesforce1://sObject/" & Id & "/view", "QR Scan Code", 220, 220)
