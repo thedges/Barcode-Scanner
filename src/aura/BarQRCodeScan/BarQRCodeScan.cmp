@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force.appHostable" access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <div class="button" onclick="{!c.scanBarcode}">
+        <img src="/resource/barcodescan"/>
+    </div>
+</aura:component>

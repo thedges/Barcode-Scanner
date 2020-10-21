@@ -1,0 +1,14 @@
+.THIS {
+}
+.THIS button {
+    background: #000077;
+    margin: 2em;
+    border: 2em;
+    border-color: #000077;
+    border-radius: 1em;
+}
+.THIS img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
