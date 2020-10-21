@@ -11,20 +11,23 @@ To create a QR code for scanning, a good utility to use is this service called [
 
 `IMAGE("https://api.qrserver.com/v1/create-qr-code/?data=salesforce1://sObject/" & Id & "/view", "QR Scan Code", 220, 220)`
 
-Next, create an email template that utilizes the formula field above. You can then send such email to a receipient and have a QR Code embedded in the email like the following sample email. You can use this to scan with this utility.
+Next, create an email template that utilizes the formula field above. You can then send such email to a recipient and have a QR Code embedded in the email like the following sample email. You can use this to scan with this utility.
 
 ![alt text](https://github.com/thedges/Barcode-Scanner/blob/main/BarcodeScannerEmail.png "BarcodeScannerEmail")
 
-# Installation Instructions
+# Installation & Usage Instructions
 
 <b>Here are steps to use this component:</b>
   
-1. Install the component per the **Deploy to Salesforce** button below
-2. Assign the **PSMockPayment** permission set to whatever user needs access to this component.
-3. Create a flow and add the "psMockPayment" component to a screen. 
-   * Use one variable to provide a payment amount to the component.
-   * Create two variables to capture the transaction id and message to store on a record.
-4. In the actual flow at runtime, just click the "Pay ..." button and it will show a confirmation message. That's it!
+1. Install the [pic2shop](https://www.pic2shop.com/) app on your mobile phone.
+2. Install the component per the **Deploy to Salesforce** button below.
+3. Go to **Setup > Apps > Mobile Apps > Salesforce > Salesforce Navigation**. Assign the **Scan Barcode** item to top of your navigation items like the following:
+
+![alt text](https://github.com/thedges/Barcode-Scanner/blob/main/BarcodeScanMobileNav.png "BarcodeScanMobileNav")
+
+4. Make sure to create QR Code Formula Field and Email template as described above.
+5. Not to use the component, just click on the **Scan Barcode** item at bottom of Salesforce Mobile app. 
+   * It will then launch the pic2Shop app. Scan a QR code generated per the instructions above and it will punch back in to Salesforce Mobile to that record.
   
 <a href="https://githubsfdeploy.herokuapp.com">
   <img alt="Deploy to Salesforce"
