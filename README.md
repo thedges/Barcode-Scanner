@@ -29,7 +29,7 @@ Next, create an email template that utilizes the formula field above. You can th
 5. Not to use the component, just click on the **Scan Barcode** item at bottom of Salesforce Mobile app. 
    * It will then launch the pic2Shop app. Scan a QR code generated per the instructions above and it will punch back in to Salesforce Mobile to that record.
   
-<a href="https://githubsfdeploy.herokuapp.com">
+<a href="https://githubsfdeploy.herokuapp.com?owner=thedges&repo=Barcode-Scanner&ref=main">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
